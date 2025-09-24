@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: process.env.FRONTEND_URL || 'http://159.65.73.165:3000',
   credentials: true
 }));
 app.use(morgan('combined'));
@@ -60,7 +60,7 @@ app.use('*', (req, res) => {
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(` Flex Living Reviews API server running on port ${PORT}`);
-    console.log(` Health check: http://localhost:${PORT}/api/health`);
+    console.log(` Health check: http://159.65.73.165:${PORT}/api/health`);
   });
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Paper, Typography, TextField, Button, Alert, Box } from '@mui/material';
 import { Lock, Person } from '@mui/icons-material';
 
-const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const API_BASE = process.env.REACT_APP_API_URL || 'http://159.65.73.165:5000/api';
 
 const LoginPage: React.FC = () => {
   const [username, setUsername] = useState('');
