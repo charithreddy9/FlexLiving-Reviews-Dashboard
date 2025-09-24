@@ -56,7 +56,12 @@ app.use('*', (req, res) => {
   res.status(404).json({ error: 'Route not found' });
 });
 
-app.listen(PORT, () => {
-  console.log(` Flex Living Reviews API server running on port ${PORT}`);
-  console.log(` Health check: http://localhost:${PORT}/api/health`);
-});
+// Only listen locally (dev). On Vercel we export the app.
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(` Flex Living Reviews API server running on port ${PORT}`);
+    console.log(` Health check: http://localhost:${PORT}/api/health`);
+  });
+}
+
+module.exports = app;
