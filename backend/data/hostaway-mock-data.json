@@ -1,0 +1,169 @@
+{
+  "reviews": [
+    {
+      "id": "rev_001",
+      "listingId": "prop_001",
+      "listingName": "Luxury Downtown Apartment",
+      "guestName": "Sarah Johnson",
+      "rating": 5,
+      "reviewText": "Absolutely amazing stay! The apartment was spotless and the location was perfect for exploring the city. The host was incredibly responsive and helpful.",
+      "reviewDate": "2024-01-15T10:30:00Z",
+      "channel": "Airbnb",
+      "category": "Cleanliness",
+      "response": {
+        "text": "Thank you so much, Sarah! We're thrilled you enjoyed your stay.",
+        "date": "2024-01-16T08:15:00Z"
+      },
+      "isApproved": true,
+      "sentiment": "positive"
+    },
+    {
+      "id": "rev_002",
+      "listingId": "prop_001",
+      "listingName": "Luxury Downtown Apartment",
+      "guestName": "Mike Chen",
+      "rating": 4,
+      "reviewText": "Great location and comfortable space. The only issue was the WiFi was a bit slow in the evening.",
+      "reviewDate": "2024-01-10T14:20:00Z",
+      "channel": "Booking.com",
+      "category": "Connectivity",
+      "response": {
+        "text": "Thanks for the feedback, Mike! We've upgraded the WiFi since your stay.",
+        "date": "2024-01-11T09:30:00Z"
+      },
+      "isApproved": false,
+      "sentiment": "positive"
+    },
+    {
+      "id": "rev_003",
+      "listingId": "prop_002",
+      "listingName": "Cozy Beach House",
+      "guestName": "Emma Rodriguez",
+      "rating": 5,
+      "reviewText": "Perfect beach getaway! The house was exactly as described and the sunset views were incredible.",
+      "reviewDate": "2024-01-08T16:45:00Z",
+      "channel": "VRBO",
+      "category": "Location",
+      "response": null,
+      "isApproved": true,
+      "sentiment": "positive"
+    },
+    {
+      "id": "rev_004",
+      "listingId": "prop_002",
+      "listingName": "Cozy Beach House",
+      "guestName": "David Kim",
+      "rating": 3,
+      "reviewText": "The house was nice but the kitchen appliances were outdated and some didn't work properly.",
+      "reviewDate": "2024-01-05T11:15:00Z",
+      "channel": "Airbnb",
+      "category": "Amenities",
+      "response": {
+        "text": "We apologize for the inconvenience, David. We're updating the kitchen appliances this month.",
+        "date": "2024-01-06T10:00:00Z"
+      },
+      "isApproved": false,
+      "sentiment": "negative"
+    },
+    {
+      "id": "rev_005",
+      "listingId": "prop_003",
+      "listingName": "Modern City Loft",
+      "guestName": "Lisa Thompson",
+      "rating": 5,
+      "reviewText": "Stunning loft with amazing city views! The design was modern and everything was perfect.",
+      "reviewDate": "2024-01-12T13:30:00Z",
+      "channel": "Direct Booking",
+      "category": "Design",
+      "response": {
+        "text": "Thank you, Lisa! We're so glad you loved the design.",
+        "date": "2024-01-13T07:45:00Z"
+      },
+      "isApproved": true,
+      "sentiment": "positive"
+    },
+    {
+      "id": "rev_006",
+      "listingId": "prop_001",
+      "listingName": "Luxury Downtown Apartment",
+      "guestName": "Alex Martinez",
+      "rating": 2,
+      "reviewText": "The apartment was not as clean as expected and the check-in process was confusing.",
+      "reviewDate": "2024-01-03T09:20:00Z",
+      "channel": "Booking.com",
+      "category": "Cleanliness",
+      "response": {
+        "text": "We sincerely apologize for the issues. We've addressed the cleaning procedures and simplified check-in.",
+        "date": "2024-01-04T08:30:00Z"
+      },
+      "isApproved": false,
+      "sentiment": "negative"
+    },
+    {
+      "id": "rev_007",
+      "listingId": "prop_003",
+      "listingName": "Modern City Loft",
+      "guestName": "Jennifer Lee",
+      "rating": 4,
+      "reviewText": "Beautiful space with great amenities. The only downside was the noise from the street at night.",
+      "reviewDate": "2024-01-14T15:10:00Z",
+      "channel": "VRBO",
+      "category": "Noise",
+      "response": null,
+      "isApproved": true,
+      "sentiment": "neutral"
+    },
+    {
+      "id": "rev_008",
+      "listingId": "prop_002",
+      "listingName": "Cozy Beach House",
+      "guestName": "Robert Wilson",
+      "rating": 5,
+      "reviewText": "Fantastic beach house! Perfect for families. The kids loved the pool and beach access.",
+      "reviewDate": "2024-01-11T12:00:00Z",
+      "channel": "Airbnb",
+      "category": "Family-friendly",
+      "response": {
+        "text": "We're so happy the kids enjoyed it! Thank you for choosing us.",
+        "date": "2024-01-12T06:30:00Z"
+      },
+      "isApproved": true,
+      "sentiment": "positive"
+    }
+  ],
+  "listings": [
+    {
+      "id": "prop_001",
+      "name": "Luxury Downtown Apartment",
+      "location": "Downtown District",
+      "type": "Apartment",
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "maxGuests": 4,
+      "averageRating": 3.7,
+      "totalReviews": 3
+    },
+    {
+      "id": "prop_002",
+      "name": "Cozy Beach House",
+      "location": "Beachfront",
+      "type": "House",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "maxGuests": 6,
+      "averageRating": 4.3,
+      "totalReviews": 3
+    },
+    {
+      "id": "prop_003",
+      "name": "Modern City Loft",
+      "location": "Arts District",
+      "type": "Loft",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "maxGuests": 2,
+      "averageRating": 4.5,
+      "totalReviews": 2
+    }
+  ]
+}
