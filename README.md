@@ -2,7 +2,7 @@
 
 A comprehensive reviews management system for Flex Living properties, featuring a modern React frontend and Node.js backend with API integration capabilities.
 
-## 🚀 Features
+## Features
 
 ### Backend (Node.js)
 - **Hostaway API Integration**: Mock API route (`GET /api/reviews/hostaway`) with data normalization
@@ -23,7 +23,7 @@ A comprehensive reviews management system for Flex Living properties, featuring 
 - **Real-time Updates**: Live data updates and statistics
 - **Authentication**: Local storage-based manager authentication
 
-## 🛠 Tech Stack
+## Tech Stack
 
 ### Backend
 - **Node.js** with Express.js
@@ -42,43 +42,6 @@ A comprehensive reviews management system for Flex Living properties, featuring 
 - **node-fetch** for HTTP requests
 - **Emotion** for CSS-in-JS styling
 
-## 📁 Project Structure
-
-```
-charith-assignment/
-├── backend/
-│   ├── routes/
-│   │   ├── reviews.js          # Hostaway reviews API routes
-│   │   └── googleReviews.js    # Google Reviews integration
-│   ├── data/
-│   │   └── hostaway-mock-data.json  # Mock Hostaway data
-│   ├── utils/
-│   │   └── reviewUtils.js      # Data processing utilities
-│   ├── server.js               # Express server setup
-│   ├── package.json
-│   └── env.example             # Environment variables template
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── LoginPage.tsx           # Manager login page
-│   │   │   ├── ManagerDashboard.tsx    # Main dashboard
-│   │   │   ├── ReviewDisplayPage.tsx   # Private review display
-│   │   │   ├── PublicPropertyPage.tsx  # Public property page
-│   │   │   └── Navigation.tsx          # Navigation component
-│   │   ├── services/
-│   │   │   └── api.ts          # API service layer
-│   │   ├── types/
-│   │   │   └── index.ts        # TypeScript type definitions
-│   │   └── App.tsx             # Main app component
-│   └── package.json
-├── package.json                # Root package.json for scripts
-├── QUICKSTART.md              # Quick start guide
-└── README.md
-```
-
-## 🚀 Getting Started
-
-> **Quick Start**: For a faster setup, see [QUICKSTART.md](QUICKSTART.md) for a 5-minute guide.
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -87,10 +50,7 @@ charith-assignment/
 ### Installation
 
 1. **Clone and navigate to the project:**
-   ```bash
-   cd charith-assignment
-   ```
-
+   
 2. **Install all dependencies:**
    ```bash
    npm run install-all
@@ -148,7 +108,7 @@ npm start
 - `npm run install-all` - Install dependencies for all projects
 - `npm run build` - Build frontend for production
 
-## 📊 API Endpoints
+## API Endpoints
 
 ### Reviews API (Protected with Admin Access)
 - `GET /api/reviews/hostaway` - Fetch and filter reviews with pagination
@@ -168,7 +128,7 @@ npm start
 - Reviews API requires `X-ADMIN-KEY` header for access
 - Configure `ADMIN_ACCESS_CODE` in environment variables
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -197,7 +157,7 @@ GOOGLE_PLACES_API_KEY=your_google_places_api_key_here
 4. Create credentials (API Key)
 5. Add the API key to your `.env` file
 
-## 🎯 Key Features Explained
+## Key Features Explained
 
 ### Data Normalization
 The system normalizes review data from various sources:
@@ -227,7 +187,7 @@ The system normalizes review data from various sources:
 - **Property Details**: Amenities, location, and property information
 - **Public Access**: No authentication required for viewing
 
-## 🔍 Google Reviews Integration
+## Google Reviews Integration
 
 The system includes comprehensive Google Reviews integration:
 
@@ -245,7 +205,7 @@ Check integration status at: `GET /api/google-reviews/integration-status`
 3. Add API key to environment variables
 4. Restart server to activate real API integration
 
-## 🎨 Design Decisions
+## Design Decisions
 
 ### UI/UX Philosophy
 - **Manager-First**: Dashboard designed for property managers' workflow
@@ -259,7 +219,7 @@ Check integration status at: `GET /api/google-reviews/integration-status`
 - **Error Handling**: Comprehensive error handling and user feedback
 - **Performance**: Optimized API calls and data processing
 
-## 🚀 Deployment
+## Deployment
 
 ### Production Build
 ```bash
@@ -277,7 +237,7 @@ npm start
 - Set up proper CORS origins
 - Configure Google Places API with production restrictions
 
-## 📈 Future Enhancements
+## Future Enhancements
 
 ### Planned Features
 - **Database Integration**: PostgreSQL/MongoDB for persistent storage
@@ -294,34 +254,7 @@ npm start
 - **Caching**: Redis caching for improved performance
 - **Webhooks**: Real-time data synchronization
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Backend won't start:**
-- Check if port 5000 is available
-- Verify all dependencies are installed
-- Check environment variables
-
-**Frontend won't connect to backend:**
-- Ensure backend is running on port 5000
-- Check CORS configuration in server.js
-- Verify API calls are using correct base URL
-- Check browser console for CORS errors
-
-**Google Reviews not working:**
-- Verify API key is correctly set
-- Check API quotas in Google Cloud Console
-- Ensure required APIs are enabled
-
-**Authentication issues:**
-- Check if `ADMIN_ACCESS_CODE` is set in backend environment
-- Verify `X-ADMIN-KEY` header is being sent with API requests
-- Clear browser localStorage if login issues persist
-- Check browser console for authentication errors
-
-### Debug Mode
-Set `NODE_ENV=development` for detailed error messages and logging.
+**The live deployment is accessible here:** http://159.65.73.165:3000/
 
 
 
